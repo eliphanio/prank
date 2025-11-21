@@ -9,12 +9,21 @@ body{
 
 #myVideo {
     display: none; /* cachée au départ */
-    width: 300px;
+    width: 600px;
     transition: 0.3s;
     margin: auto;
     
   
   }
+
+@media screen and (max-width: 700px) {
+    #myVideo {
+        width: 400px;     /* la vidéo prend toute la largeur de l’écran */
+    /* conserve le ratio */
+    }
+}
+
+
 
 .btn{
    background-color: dodgerblue;
