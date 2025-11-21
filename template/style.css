@@ -9,7 +9,7 @@ body{
 
 #myVideo {
     display: none; /* cachée au départ */
-    width: 600px;
+    width: 300px;
     transition: 0.3s;
     margin: auto;
     
