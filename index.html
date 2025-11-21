@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>prank</title>
+<link rel="stylesheet" href="/template/style.css">
+</head>
+<body>
+
+<div class="container">
+    <div><h1><strong>Bienvenue sur notre site</strong></h1></div>
+</div>
+
+<div class="container">
+    <button class="btn" id="playBtn">Start</button>
+</div>
+
+<video id="myVideo" src="/video/lv_0_20251121153426.mp4" loop playsinline></video>
+
+<script>
+const video = document.getElementById('myVideo');
+const button = document.getElementById('playBtn');
+
+button.addEventListener('click', () => {
+    
+    video.style.display = 'block';
+    
+    
+    video.muted = false;
+
+    
+    video.play();
+
+    
+    button.style.display = 'none';
+});
+</script>
+
+</body>
+</html>
