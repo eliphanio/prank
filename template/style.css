@@ -18,8 +18,8 @@ body{
 
 @media screen and (max-width: 700px) {
     #myVideo {
-        width: 400px;     /* la vidéo prend toute la largeur de l’écran */
-    /* conserve le ratio */
+        width: 400px;
+        margin: 20px;
     }
 }
 
