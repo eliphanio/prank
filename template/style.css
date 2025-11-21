@@ -24,12 +24,7 @@ body{
     }
 }
 
-@media screen and (max-width: 400px) {
-    #myVideo {
-        width: 150px;
-        margin: 20px;
-    }
-}
+
 
 
 
