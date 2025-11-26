@@ -23,13 +23,27 @@
 </head>
 <body>
 
-<div class="container">
-    <div><h1><strong>Bienvenue sur notre site</strong></h1></div>
+<div class="container" id="warning">
+    <div><h1><strong>Bienvenue 👋</strong></h1></div>
+
+    <div>
+        <h1 style="color: red;">
+            <strong>⚠️ AVERTISSEMENT</strong>
+        </h1>
+        <h2>Ce site peut contenir un élément surprenant et potentiellement gênant.</h2>
+        <h2>Il n’est pas recommandé aux personnes sensibles.</h2>
+    </div>
+
+    <div>
+        <h2>Si vous souhaitez continuer, appuyez sur <strong>Start</strong> ⬇️</h2>
+    </div>
 </div>
+
 
 <div class="container">
     <div>
         <button class="btn" id="playBtn">Start</button>
+        <h2 id="infoText" style="display:none; margin-top:20px;">Vous avez été prévenu 😏</h2>
         <video id="myVideo" src="/video/lv_0_20251121153426.mp4" loop playsinline></video>
     </div>
 </div>
@@ -39,9 +53,13 @@
 <script>
 const video = document.getElementById('myVideo');
 const button = document.getElementById('playBtn');
+const warning = document.getElementById('warning');
+const infoText = document.getElementById('infoText');
 
 button.addEventListener('click', () => {
     
+    warning.style.display = 'none';  
+    infoText.style.display = 'block';  
     video.style.display = 'block';
     
     
